@@ -82,7 +82,7 @@ export default function NavBar() {
         </div>
 
         {/* mobile menu */}
-        <div className="lg:hidden flex justify-between items-center gap-3">
+        <div className="md:hidden flex justify-between items-center gap-3">
           <div>
             <Link
               href={"/"}

@@ -38,7 +38,7 @@ export default function Carousel({ isHidden }: { isHidden?: boolean }) {
           transition={{
             duration: 0.6,
           }}
-          className="absolute top-0 right-5 lg:left-0 w-full h-full z-50 flex items-start justify-start mt-[70vh] lg:mt-[75vh] flex-col pl-6 md:pl-32 gap-2"
+          className="absolute top-0 right-5 lg:left-0 w-full h-full z-50 flex items-start justify-start mt-[70vh] md:mt-[75vh] flex-col pl-[9vw] sm:pl-[4vw]  md:pl-[10vw] lg:pl-[8vw] xl:pl-[8.7vw] gap-2"
         >
           <button
             className={

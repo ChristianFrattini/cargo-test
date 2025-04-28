@@ -192,7 +192,12 @@ export const ImagesSlider = ({
       )}
       {/* bottom index tracker*/}
       <AnimatePresence>
-        <div className="absolute bottom-4 lg:bottom-[18vh] left-1/2 lg:left-5 transform -translate-x-1/2 lg:translate-x-0 z-40 flex items-center gap-2 pl-0 lg:pl-32">
+        <div
+          className="absolute bottom-4 lg:bottom-[18vh] 
+                  left-1/2 lg:left-[10vw] 
+                  transform -translate-x-1/2 lg:transform-none 
+                  z-40 flex items-center gap-2"
+        >
           {slides.map((_, index) => (
             <span
               key={index}
