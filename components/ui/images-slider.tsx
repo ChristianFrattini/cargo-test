@@ -17,7 +17,7 @@ export const ImagesSlider = ({
   overlayClassName,
   className,
   autoplay = true,
-  direction = "right", // Default to right-to-left
+  direction = "right", // fefault to right-to-left
   isHidden = false,
 }: {
   slides: SlideItem[];
@@ -77,7 +77,7 @@ export const ImagesSlider = ({
     if (autoplay) {
       interval = setInterval(() => {
         handleNext();
-      }, 8000);
+      }, 8000); //change image every 8 seconds
     }
 
     return () => {
@@ -87,6 +87,7 @@ export const ImagesSlider = ({
   }, [autoplay]);
 
   const slideVariants = {
+    // define the animation variants
     enter: (direction: string) => {
       return {
         x: direction === "right" ? "100%" : direction === "left" ? "-100%" : 0,
@@ -189,7 +190,7 @@ export const ImagesSlider = ({
           </motion.div>
         </AnimatePresence>
       )}
-
+      {/* bottom index tracker*/}
       <AnimatePresence>
         <div className="absolute bottom-4 lg:bottom-[18vh] left-1/2 lg:left-5 transform -translate-x-1/2 lg:translate-x-0 z-40 flex items-center gap-2 pl-0 lg:pl-32">
           {slides.map((_, index) => (

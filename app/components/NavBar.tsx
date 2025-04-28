@@ -109,6 +109,8 @@ export default function NavBar() {
           </div>
         </div>
       </nav>
+
+      {/* mobile menu interface (opened)*/}
       {isMobileMenuOpen && (
         <div
           className={`fixed top-16 left-0 right-0 h-[56vh] z-50 md:hidden ${

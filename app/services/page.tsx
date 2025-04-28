@@ -4,6 +4,7 @@ import Image from "next/image";
 import Footer from "../components/Footer";
 
 export default function ServicesPage() {
+  //SERVICES PAGE
   return (
     <div className={" flex flex-col gap-16"}>
       <div

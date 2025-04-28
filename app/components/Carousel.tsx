@@ -23,7 +23,7 @@ const data = [
 export default function Carousel({ isHidden }: { isHidden?: boolean }) {
   return (
     <div className="relative md:h-[110vh] h-[100vh] w-full">
-      {/* Background image */}
+      {/* slider images */}
 
       <ImagesSlider slides={data} isHidden={isHidden}>
         <motion.div
@@ -54,7 +54,8 @@ export default function Carousel({ isHidden }: { isHidden?: boolean }) {
             >
               Find out more
             </span>
-            <ArrowRight className="ml-7 p-2 h-10 w-10 bg-amber-300 text-black rounded-full group-hover:translate-x-1 duration-200" />
+            <ArrowRight className="ml-7 p-2 h-10 w-10 bg-amber-300 text-black rounded-full group-hover:translate-x-1 duration-200" />{" "}
+            {/* Arrow icon. children to prevent "refresh" effect*/}
           </button>
         </motion.div>
       </ImagesSlider>
